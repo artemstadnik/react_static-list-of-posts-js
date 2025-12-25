@@ -5,10 +5,10 @@ import commentsFromServer from './api/comments.json';
 import usersFromServer from './api/users.json';
 import { PostList } from './components/PostList/PostList';
 
-const posts = postsFromServer.map((post) => ({
+const posts = postsFromServer.map(post => ({
   ...post,
-  users: usersFromServer.find((user) => user.id === post.userId),
-  comments: commentsFromServer.filter((comment) => comment.postId === post.id),
+  users: usersFromServer.find(user => user.id === post.userId),
+  comments: commentsFromServer.filter(comment => comment.postId === post.id),
 }));
 
 export const App = () => (
