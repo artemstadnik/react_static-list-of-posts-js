@@ -4,8 +4,8 @@ import './PostInfo.scss';
 
 export const PostInfo = ({ post }) => (
   <div className="PostInfo">
-    <div className="PostInfoheader">
-      <h3 className="PostInfotitle">{post.title}</h3>
+    <div className="PostInfo__header">
+      <h3 className="PostInfo__title">{post.title}</h3>
 
       <p>
         {' Posted by  '}
